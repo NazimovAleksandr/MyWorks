@@ -45,8 +45,15 @@ public class Main {
         System.out.println("(Static method) Vector1 * Vector2 = " + Vector.getScalarProduct(vector1, vector2));
         System.out.println();
 
-        System.out.println("Vector1 = " + vector1);
-        vector1.revert();
-        System.out.println("Revert Vector1 = " + vector1);
+        Vector vector4 = new Vector(4);
+
+        vector4.setComponent(0, 1);
+        vector4.setComponent(1, 2);
+        vector4.setComponent(2, 3);
+        vector4.setComponent(3, 4);
+
+        System.out.println("Vector4 = " + vector4);
+        vector4.revert();
+        System.out.println("Revert Vector4 = " + vector4);
     }
 }
